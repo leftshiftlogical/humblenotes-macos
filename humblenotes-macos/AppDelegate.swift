@@ -13,19 +13,23 @@ import SwiftUI
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var popover: NSPopover!
-    var statusBarItem: NSStatusItem!
+    var statusItem: NSStatusItem!
+    var statusMenu: NSMenu!
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let contentView = ContentView()
 
+        statusMenu = NSMenu()
+        statusMenu.addItem(NSMenuItem(title: "Quit Humble Notes", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        
         let popover = NSPopover()
         popover.contentSize = NSSize(width: 400, height: 400)
         popover.behavior = .transient // should hide popover when focus switches to another app but doesn't ...
         popover.contentViewController = NSHostingController(rootView: contentView)
         self.popover = popover
         
-        self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
-        if let button = self.statusBarItem.button {
+        self.statusItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
+        if let button = self.statusItem.button {
             button.image = NSImage(named: "MenuIcon")
             button.action = #selector(handleStatusBarClick(_:))
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
@@ -39,15 +43,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let event = NSApp.currentEvent!
 
         if event.type == NSEvent.EventType.rightMouseUp {
-            print("right mouse")
-            // TODO add context menu
+            // hack once you set a menu any click will
+            // activate it so set the menu, trigger a
+            // synthetic click, then unset the menu
+            // to allow other actions again
+            statusItem.menu = statusMenu
+            statusItem.button?.performClick(nil)
+            statusItem.menu = nil
         } else {
             self.togglePopover(sender)
         }
     }
     
     @objc func togglePopover(_ sender: AnyObject?) {
-        if let button = self.statusBarItem.button {
+        if let button = self.statusItem.button {
             if self.popover.isShown {
                 self.popover.performClose(sender)
             } else {
