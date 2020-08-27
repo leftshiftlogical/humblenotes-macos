@@ -27,12 +27,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
         if let button = self.statusBarItem.button {
             button.image = NSImage(named: "MenuIcon")
-            button.action = #selector(togglePopover(_:))
+            button.action = #selector(handleStatusBarClick(_:))
+            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
-        
         // set popover to key so user does not have to click twice to
         // interact with popover content
         self.popover.contentViewController?.view.window?.becomeKey()
+    }
+    
+    @objc func handleStatusBarClick(_ sender: AnyObject?) {
+        let event = NSApp.currentEvent!
+
+        if event.type == NSEvent.EventType.rightMouseUp {
+            print("right mouse")
+            // TODO add context menu
+        } else {
+            self.togglePopover(sender)
+        }
     }
     
     @objc func togglePopover(_ sender: AnyObject?) {
