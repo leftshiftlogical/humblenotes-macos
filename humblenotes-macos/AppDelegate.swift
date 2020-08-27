@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = self.statusItem.button {
             button.image = NSImage(named: "MenuIcon")
             button.action = #selector(handleStatusBarClick(_:))
-            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+            button.sendAction(on: [.leftMouseDown, .rightMouseDown])
         }
         // set popover to key so user does not have to click twice to
         // interact with popover content
@@ -42,7 +42,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func handleStatusBarClick(_ sender: AnyObject?) {
         let event = NSApp.currentEvent!
 
-        if event.type == NSEvent.EventType.rightMouseUp {
+        switch event.type {
+        case NSEvent.EventType.rightMouseDown:
             // HACK: once you set a menu any click will
             // activate it so set the menu, trigger a
             // synthetic click, then unset the menu
@@ -50,8 +51,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusItem.menu = statusMenu
             statusItem.button?.performClick(nil)
             statusItem.menu = nil
-        } else {
-            self.togglePopover(sender)
+        case NSEvent.EventType.leftMouseDown:
+            self.showPopover(sender)
+        default:
+            // do nothing
+            return
         }
     }
     
