@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6003DA1A24F7453300FC85D8 /* humblenotes-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "humblenotes-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003DA1A24F7453300FC85D8 /* Humble Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Humble Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003DA1D24F7453300FC85D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6003DA1F24F7453300FC85D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6003DA2224F7453300FC85D8 /* humblenotes_macos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = humblenotes_macos.xcdatamodel; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		6003DA1B24F7453300FC85D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003DA1A24F7453300FC85D8 /* humblenotes-macos.app */,
+				6003DA1A24F7453300FC85D8 /* Humble Notes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,9 +80,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003DA1924F7453300FC85D8 /* humblenotes-macos */ = {
+		6003DA1924F7453300FC85D8 /* Humble Notes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003DA3024F7453400FC85D8 /* Build configuration list for PBXNativeTarget "humblenotes-macos" */;
+			buildConfigurationList = 6003DA3024F7453400FC85D8 /* Build configuration list for PBXNativeTarget "Humble Notes" */;
 			buildPhases = (
 				6003DA1624F7453300FC85D8 /* Sources */,
 				6003DA1724F7453300FC85D8 /* Frameworks */,
@@ -92,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = "humblenotes-macos";
+			name = "Humble Notes";
 			productName = "humblenotes-macos";
-			productReference = 6003DA1A24F7453300FC85D8 /* humblenotes-macos.app */;
+			productReference = 6003DA1A24F7453300FC85D8 /* Humble Notes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003DA1524F7453300FC85D8 /* Build configuration list for PBXProject "humblenotes-macos" */;
+			buildConfigurationList = 6003DA1524F7453300FC85D8 /* Build configuration list for PBXProject "Humble Notes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003DA1924F7453300FC85D8 /* humblenotes-macos */,
+				6003DA1924F7453300FC85D8 /* Humble Notes */,
 			);
 		};
 /* End PBXProject section */
@@ -330,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003DA1524F7453300FC85D8 /* Build configuration list for PBXProject "humblenotes-macos" */ = {
+		6003DA1524F7453300FC85D8 /* Build configuration list for PBXProject "Humble Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003DA2E24F7453400FC85D8 /* Debug */,
@@ -339,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003DA3024F7453400FC85D8 /* Build configuration list for PBXNativeTarget "humblenotes-macos" */ = {
+		6003DA3024F7453400FC85D8 /* Build configuration list for PBXNativeTarget "Humble Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003DA3124F7453400FC85D8 /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:humblenotes-macos.xcodeproj">
+      location = "self:/Users/personal/Github/humblenotes-macos/Humble Notes.xcodeproj">
    </FileRef>
 </Workspace>
