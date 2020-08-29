@@ -13,6 +13,15 @@
 		6003DA2524F7453400FC85D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003DA2424F7453400FC85D8 /* Assets.xcassets */; };
 		6003DA2824F7453400FC85D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003DA2724F7453400FC85D8 /* Preview Assets.xcassets */; };
 		6003DA2B24F7453400FC85D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003DA2924F7453400FC85D8 /* Main.storyboard */; };
+		60E179C224FABBEE007E767F /* Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E179C124FABBEE007E767F /* Webview.swift */; };
+		60E179CA24FAC250007E767F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E179C924FAC250007E767F /* AppDelegate.swift */; };
+		60E179CC24FAC250007E767F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E179CB24FAC250007E767F /* SceneDelegate.swift */; };
+		60E179CF24FAC250007E767F /* humblenotes_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60E179CD24FAC250007E767F /* humblenotes_ios.xcdatamodeld */; };
+		60E179D124FAC250007E767F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E179D024FAC250007E767F /* ContentView.swift */; };
+		60E179D324FAC257007E767F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E179D224FAC257007E767F /* Assets.xcassets */; };
+		60E179D624FAC257007E767F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E179D524FAC257007E767F /* Preview Assets.xcassets */; };
+		60E179D924FAC257007E767F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E179D724FAC257007E767F /* LaunchScreen.storyboard */; };
+		60E179DF24FAD7F5007E767F /* Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E179C124FABBEE007E767F /* Webview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +34,27 @@
 		6003DA2A24F7453400FC85D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6003DA2C24F7453400FC85D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6003DA2D24F7453400FC85D8 /* humblenotes_macos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = humblenotes_macos.entitlements; sourceTree = "<group>"; };
+		60E179C124FABBEE007E767F /* Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview.swift; sourceTree = "<group>"; };
+		60E179C724FAC250007E767F /* humblenotes-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "humblenotes-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E179C924FAC250007E767F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60E179CB24FAC250007E767F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		60E179CE24FAC250007E767F /* humblenotes_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = humblenotes_ios.xcdatamodel; sourceTree = "<group>"; };
+		60E179D024FAC250007E767F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		60E179D224FAC257007E767F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60E179D524FAC257007E767F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60E179D824FAC257007E767F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60E179DA24FAC257007E767F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6003DA1724F7453300FC85D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E179C424FAC250007E767F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +67,9 @@
 		6003DA1124F7453300FC85D8 = {
 			isa = PBXGroup;
 			children = (
+				60E179C124FABBEE007E767F /* Webview.swift */,
 				6003DA1C24F7453300FC85D8 /* humblenotes-macos */,
+				60E179C824FAC250007E767F /* humblenotes-ios */,
 				6003DA1B24F7453300FC85D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				6003DA1A24F7453300FC85D8 /* humblenotes-macos.app */,
+				60E179C724FAC250007E767F /* humblenotes-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +106,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		60E179C824FAC250007E767F /* humblenotes-ios */ = {
+			isa = PBXGroup;
+			children = (
+				60E179C924FAC250007E767F /* AppDelegate.swift */,
+				60E179CB24FAC250007E767F /* SceneDelegate.swift */,
+				60E179D024FAC250007E767F /* ContentView.swift */,
+				60E179D224FAC257007E767F /* Assets.xcassets */,
+				60E179D724FAC257007E767F /* LaunchScreen.storyboard */,
+				60E179DA24FAC257007E767F /* Info.plist */,
+				60E179CD24FAC250007E767F /* humblenotes_ios.xcdatamodeld */,
+				60E179D424FAC257007E767F /* Preview Content */,
+			);
+			path = "humblenotes-ios";
+			sourceTree = "<group>";
+		};
+		60E179D424FAC257007E767F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				60E179D524FAC257007E767F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,6 +149,23 @@
 			productReference = 6003DA1A24F7453300FC85D8 /* humblenotes-macos.app */;
 			productType = "com.apple.product-type.application";
 		};
+		60E179C624FAC250007E767F /* humblenotes-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E179DB24FAC257007E767F /* Build configuration list for PBXNativeTarget "humblenotes-ios" */;
+			buildPhases = (
+				60E179C324FAC250007E767F /* Sources */,
+				60E179C424FAC250007E767F /* Frameworks */,
+				60E179C524FAC250007E767F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "humblenotes-ios";
+			productName = "humblenotes-ios";
+			productReference = 60E179C724FAC250007E767F /* humblenotes-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,9 +179,12 @@
 					6003DA1924F7453300FC85D8 = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					60E179C624FAC250007E767F = {
+						CreatedOnToolsVersion = 11.6;
+					};
 				};
 			};
-			buildConfigurationList = 6003DA1524F7453300FC85D8 /* Build configuration list for PBXProject "humblenotes-macos" */;
+			buildConfigurationList = 6003DA1524F7453300FC85D8 /* Build configuration list for PBXProject "humblenotes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				6003DA1924F7453300FC85D8 /* humblenotes-macos */,
+				60E179C624FAC250007E767F /* humblenotes-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +214,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60E179C524FAC250007E767F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E179D924FAC257007E767F /* LaunchScreen.storyboard in Resources */,
+				60E179D624FAC257007E767F /* Preview Assets.xcassets in Resources */,
+				60E179D324FAC257007E767F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,8 +232,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003DA2024F7453300FC85D8 /* ContentView.swift in Sources */,
+				60E179C224FABBEE007E767F /* Webview.swift in Sources */,
 				6003DA1E24F7453300FC85D8 /* AppDelegate.swift in Sources */,
 				6003DA2324F7453300FC85D8 /* humblenotes_macos.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E179C324FAC250007E767F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E179CA24FAC250007E767F /* AppDelegate.swift in Sources */,
+				60E179CC24FAC250007E767F /* SceneDelegate.swift in Sources */,
+				60E179DF24FAD7F5007E767F /* Webview.swift in Sources */,
+				60E179D124FAC250007E767F /* ContentView.swift in Sources */,
+				60E179CF24FAC250007E767F /* humblenotes_ios.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +259,14 @@
 				6003DA2A24F7453400FC85D8 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60E179D724FAC257007E767F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60E179D824FAC257007E767F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -298,7 +402,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leftshift.humblenotes-macos";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.humblenotes.macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -321,16 +425,61 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leftshift.humblenotes-macos";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.humblenotes.macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		60E179DC24FAC257007E767F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"humblenotes-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = KNBPD99JQM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "humblenotes-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.humblenotes.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60E179DD24FAC257007E767F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"humblenotes-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = KNBPD99JQM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "humblenotes-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leftshift.humblenotes.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003DA1524F7453300FC85D8 /* Build configuration list for PBXProject "humblenotes-macos" */ = {
+		6003DA1524F7453300FC85D8 /* Build configuration list for PBXProject "humblenotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003DA2E24F7453400FC85D8 /* Debug */,
@@ -348,6 +497,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		60E179DB24FAC257007E767F /* Build configuration list for PBXNativeTarget "humblenotes-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E179DC24FAC257007E767F /* Debug */,
+				60E179DD24FAC257007E767F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
@@ -358,6 +516,16 @@
 			);
 			currentVersion = 6003DA2224F7453300FC85D8 /* humblenotes_macos.xcdatamodel */;
 			path = humblenotes_macos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		60E179CD24FAC250007E767F /* humblenotes_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				60E179CE24FAC250007E767F /* humblenotes_ios.xcdatamodel */,
+			);
+			currentVersion = 60E179CE24FAC250007E767F /* humblenotes_ios.xcdatamodel */;
+			path = humblenotes_ios.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
